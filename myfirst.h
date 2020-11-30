@@ -22,7 +22,11 @@ private slots:
 
     void on_checkBox_3_clicked(bool checked);
 
-    void mySlots();
+    void on_checkBox_3_clicked(void);
+
+    void mySlots(void);
+
+    void mySlots(bool checked);
 
 private:
     Ui::myfirst *ui;
