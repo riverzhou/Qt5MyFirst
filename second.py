@@ -1,5 +1,5 @@
 
-import sys
+import sys, os
 import random
 
 import matplotlib
@@ -114,8 +114,8 @@ class ApplicationWindow(QMainWindow):
         )
 
 if __name__ == '__main__':
+    os.environ['QT_AUTO_SCREEN_SCALE_FACTOR'] = '1'
     app = QApplication(sys.argv)
-
     aw = ApplicationWindow()
     aw.setWindowTitle("PyQt5 与 Matplotlib 例子")
     aw.show()
